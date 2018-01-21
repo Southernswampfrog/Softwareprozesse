@@ -1,13 +1,11 @@
 package Codebreaker;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
 public class Computer {
     private ArrayList<Integer> generatedNumbers = new ArrayList<Integer>();
-    private String generatedNumberString = "";
     private Set<Integer>possibleNumbers = (new HashSet<Integer>());
 
     public ArrayList<Integer> getGeneratedNumbers(){
@@ -29,7 +27,6 @@ public class Computer {
             }
             possibleNumbers.remove(number);
             generatedNumbers.set(i, number);
-            generatedNumberString += number;
         }
         return generatedNumbers;
     }
