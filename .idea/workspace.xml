@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30d04cd2-55bc-4d0d-8f28-697fa4e1dcc8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Codemaker/Computer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Codemaker/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/CodemakerComputerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Streetcomplete/StreetComplete" afterPath="$PROJECT_DIR$/Streetcomplete/StreetComplete" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Streetcomplete/StreetComplete/build.gradle" afterPath="$PROJECT_DIR$/Streetcomplete/StreetComplete/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Codebreaker/Computer.java" afterPath="$PROJECT_DIR$/src/main/java/Codebreaker/Computer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Codemaker/Computer.java" afterPath="$PROJECT_DIR$/src/main/java/Codemaker/Computer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Codemaker/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Codemaker/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/CodemakerComputerTest.java" afterPath="$PROJECT_DIR$/src/test/java/CodemakerComputerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -29,23 +24,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Codebreaker/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Computer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Codemaker/Computer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="68" lean-forward="true" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
+            <state relative-caret-position="476">
+              <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#220#221#0" expanded="true" />
+                <element signature="e#256#257#0" expanded="true" />
+                <element signature="e#805#813#0" expanded="true" />
+                <element signature="e#2699#2708#0" expanded="true" />
+                <element signature="e#2897#2906#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,8 +43,8 @@
       <file leaf-file-name="CodemakerComputerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CodemakerComputerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+            <state relative-caret-position="414">
+              <caret line="53" column="56" lean-forward="false" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,11 +55,9 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Codemaker/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -389,8 +376,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Codebreaker/Codebreaker.java" />
         <option value="$PROJECT_DIR$/src/main/java/Codebreaker/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Codebreaker/Computer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Codemaker/Main.java" />
         <option value="$PROJECT_DIR$/src/test/java/CodemakerComputerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Codemaker/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/Codemaker/Computer.java" />
       </list>
     </option>
@@ -503,14 +490,34 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="CodemakerComputerTest.testCountPegs4White" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CodemakerComputerTest.testGeneratePegs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Softwareprozesse_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CodemakerComputerTest" />
-      <option name="METHOD_NAME" value="testCountPegs4White" />
+      <option name="METHOD_NAME" value="testGeneratePegs" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="CodemakerComputerTest.testGenereatePegs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Softwareprozesse_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CodemakerComputerTest" />
+      <option name="METHOD_NAME" value="testGenereatePegs" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -543,6 +550,26 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="CodemakerComputerTest.testPermutation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Softwareprozesse_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CodemakerComputerTest" />
+      <option name="METHOD_NAME" value="testPermutation" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -551,25 +578,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="Codemaker.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Softwareprozesse_main" />
-      <envs />
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Codebreaker.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Codebreaker.Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -661,18 +669,20 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CodemakerComputerTest.testNewGuessWithOneHole" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CodemakerComputerTest.testCountPegs4White" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Main (1)" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CodemakerComputerTest.testNewGuessWithOneHole" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Main (1)" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CodemakerComputerTest.testPermutation" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CodemakerComputerTest.testGenereatePegs" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CodemakerComputerTest.testGeneratePegs" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.Main (1)" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CodemakerComputerTest.testNewGuessWithOneHole" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CodemakerComputerTest.testCountPegs4White" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CodemakerComputerTest.testGeneratePegs" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CodemakerComputerTest.testPermutation" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CodemakerComputerTest.testGenereatePegs" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CodemakerComputerTest.testNewGuessWithOneHole" />
       </list>
     </recent_temporary>
   </component>
@@ -689,7 +699,7 @@
       <workItem from="1516297181771" duration="5585000" />
       <workItem from="1516357248732" duration="6709000" />
       <workItem from="1516457563244" duration="7171000" />
-      <workItem from="1516558198149" duration="213000" />
+      <workItem from="1516558198149" duration="4418000" />
     </task>
     <task id="LOCAL-00001" summary="lauffähiger codebreaker teil">
       <created>1516304860082</created>
@@ -698,43 +708,50 @@
       <option name="project" value="LOCAL" />
       <updated>1516304860082</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="nicht lauffähiger codemaker teil">
+      <created>1516558416965</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1516558416965</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CodemakerComputerTest_testCountPegs4White - 2018.01.20 at 15h 42m 15s.xml">
-      <configuration name="CodemakerComputerTest.testCountPegs4White" configurationId="JUnit" />
+    <history-entry file="CodemakerComputerTest_testGeneratePegs - 2018.01.21 at 20h 09m 48s.xml">
+      <configuration name="CodemakerComputerTest.testGeneratePegs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodemakerComputerTest_testNewGuessWithOneHole - 2018.01.20 at 15h 44m 11s.xml">
-      <configuration name="CodemakerComputerTest.testNewGuessWithOneHole" configurationId="JUnit" />
+    <history-entry file="CodemakerComputerTest_testGeneratePegs - 2018.01.21 at 20h 11m 04s.xml">
+      <configuration name="CodemakerComputerTest.testGeneratePegs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodemakerComputerTest_testNewGuessWithOneHole - 2018.01.20 at 15h 46m 06s.xml">
-      <configuration name="CodemakerComputerTest.testNewGuessWithOneHole" configurationId="JUnit" />
+    <history-entry file="CodemakerComputerTest_testGenereatePegs - 2018.01.21 at 19h 47m 38s.xml">
+      <configuration name="CodemakerComputerTest.testGenereatePegs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodemakerComputerTest_testNewGuessWithOneHole - 2018.01.20 at 15h 46m 15s.xml">
-      <configuration name="CodemakerComputerTest.testNewGuessWithOneHole" configurationId="JUnit" />
+    <history-entry file="CodemakerComputerTest_testGenereatePegs - 2018.01.21 at 19h 47m 56s.xml">
+      <configuration name="CodemakerComputerTest.testGenereatePegs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodemakerComputerTest_testNewGuessWithOneHole - 2018.01.20 at 15h 47m 55s.xml">
-      <configuration name="CodemakerComputerTest.testNewGuessWithOneHole" configurationId="JUnit" />
+    <history-entry file="CodemakerComputerTest_testGenereatePegs - 2018.01.21 at 19h 48m 14s.xml">
+      <configuration name="CodemakerComputerTest.testGenereatePegs" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodemakerComputerTest_testNewGuessWithOneHole - 2018.01.20 at 15h 48m 29s.xml">
-      <configuration name="CodemakerComputerTest.testNewGuessWithOneHole" configurationId="JUnit" />
+    <history-entry file="CodemakerComputerTest_testPermutation - 2018.01.21 at 19h 36m 16s.xml">
+      <configuration name="CodemakerComputerTest.testPermutation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodemakerComputerTest_testNewGuessWithOneHole - 2018.01.20 at 15h 51m 18s.xml">
-      <configuration name="CodemakerComputerTest.testNewGuessWithOneHole" configurationId="JUnit" />
+    <history-entry file="CodemakerComputerTest_testPermutation - 2018.01.21 at 19h 37m 15s.xml">
+      <configuration name="CodemakerComputerTest.testPermutation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodemakerComputerTest_testNewGuessWithOneHole - 2018.01.20 at 15h 52m 13s.xml">
-      <configuration name="CodemakerComputerTest.testNewGuessWithOneHole" configurationId="JUnit" />
+    <history-entry file="CodemakerComputerTest_testPermutation - 2018.01.21 at 19h 37m 21s.xml">
+      <configuration name="CodemakerComputerTest.testPermutation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodemakerComputerTest_testNewGuessWithOneHole - 2018.01.20 at 15h 53m 00s.xml">
-      <configuration name="CodemakerComputerTest.testNewGuessWithOneHole" configurationId="JUnit" />
+    <history-entry file="CodemakerComputerTest_testPermutation - 2018.01.21 at 19h 38m 45s.xml">
+      <configuration name="CodemakerComputerTest.testPermutation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CodemakerComputerTest_testNewGuessWithOneHole - 2018.01.20 at 15h 57m 26s.xml">
-      <configuration name="CodemakerComputerTest.testNewGuessWithOneHole" configurationId="JUnit" />
+    <history-entry file="CodemakerComputerTest_testPermutation - 2018.01.21 at 19h 48m 27s.xml">
+      <configuration name="CodemakerComputerTest.testPermutation" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19678000" />
+    <option name="totallyTimeSpent" value="23883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -742,13 +759,14 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -765,7 +783,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -783,21 +800,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Codemaker/Computer.java</url>
-          <line>108</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Codemaker/Computer.java</url>
-          <line>130</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -824,9 +827,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -835,7 +836,11 @@
         <state relative-caret-position="2278">
           <caret line="134" column="36" lean-forward="true" selection-start-line="134" selection-start-column="36" selection-end-line="134" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#805#813#0" expanded="true" />
+            <element signature="e#2699#2708#0" expanded="true" />
+            <element signature="e#2897#2906#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -862,9 +867,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -873,7 +876,11 @@
         <state relative-caret-position="1377">
           <caret line="84" column="9" lean-forward="true" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#805#813#0" expanded="true" />
+            <element signature="e#2699#2708#0" expanded="true" />
+            <element signature="e#2897#2906#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -896,16 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Codebreaker/Computer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Codebreaker/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -914,10 +911,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Codebreaker/Computer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CodemakerComputerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+        <state relative-caret-position="414">
+          <caret line="53" column="56" lean-forward="false" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -926,20 +933,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Codemaker/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Codemaker/Computer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="68" lean-forward="true" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
+        <state relative-caret-position="476">
+          <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#805#813#0" expanded="true" />
+            <element signature="e#2699#2708#0" expanded="true" />
+            <element signature="e#2897#2906#0" expanded="true" />
           </folding>
         </state>
       </provider>

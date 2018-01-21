@@ -1,174 +1,114 @@
 package Codemaker;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.ArrayList;
 
 public class Computer {
-    private String generatedNumbers = "";
-    private Set<Integer> possibleNumbers = (new HashSet<Integer>());
-    private int blackPegsPrev = 0;
-    private int whitePegsPrev = 0;
-    private int blackPegs = 0;
-    private int whitePegs = 0;
-    private int safePegsum = 0;
-    private String prevGuess = "0000";
+    private ArrayList<String> possibleCodes = new ArrayList();
     private String guess = "0000";
-    private int dotIndex = 0;
-    private int whiteIndex = 0;
-    private int replaceIndex = 0;
-    private char temp = '.';
-    private boolean firstTimeFour = true;
 
-    public char getTemp(){
-        return temp;
-    }
-
-    public int getReplaceIndex(){
-        return replaceIndex;
-    }
-
-    public int getWhiteIndex(){
-        return whiteIndex;
-    }
-
-    public void setRemainder1(char remainder1) {
-        this.remainder1 = remainder1;
-    }
-
-    public void setRemainder2(char remainder2) {
-        this.remainder2 = remainder2;
-    }
-
-    public int getBlackPegs() {
-        return blackPegs;
-    }
-
-    public void setBlackPegs(int blackPegs) {
-        this.blackPegs = blackPegs;
-    }
-
-    public int getWhitePegs() {
-        return whitePegs;
-    }
-
-    public void setWhitePegs(int whitePegs) {
-        this.whitePegs = whitePegs;
-    }
-
-    private char remainder1;
-    private char remainder2;
-    private boolean remainder1Tried = false;
-    private boolean remainder2Tried = false;
-
-    public void setPrevGuess(String prevGuess){
-        this.prevGuess = prevGuess;
-    }
-
-    public void setGuess(String guess){
-        this.guess = guess;
+    public ArrayList<String> getPossibleCodes() {
+        return possibleCodes;
     }
 
     public String firstGuess(){
-        possibleNumbers.add(1);
-        possibleNumbers.add(2);
-        possibleNumbers.add(3);
-        possibleNumbers.add(4);
-        possibleNumbers.add(5);
-        possibleNumbers.add(6);
-        for (int i = 0; i < 4; i++) {
-            int number = (int) (Math.random()*6) + 1;
-            while (!possibleNumbers.contains(number)){
-                number = (int) (Math.random()*6) + 1;
-            }
-            possibleNumbers.remove(number);
-            generatedNumbers += number;
-        }
-        Iterator iterator = possibleNumbers.iterator();
-        remainder1 =  iterator.next().toString().charAt(0);
-        remainder2 =  iterator.next().toString().charAt(0);
-        temp = remainder1;
-        guess = generatedNumbers;
-        return generatedNumbers;
+        generatePossibleCodes();
+        guess = "1234";
+        return guess;
     }
 
     public String makeNewGuess(String pegs) {
-        countPegs(pegs);
-        if (blackPegs + whitePegs < 4 && dotIndex < 4){
-            return removeDots();
-        } else{
-            if (firstTimeFour){
-                firstTimeFour = false;
-                prevGuess = guess;
-            }
-            return removeWhite();
-        }
+        int blackPegs = countBlackPegs(pegs);
+        int whitePegs = countWhitePegs(pegs);
+        removeInconsistentCodes(blackPegs, whitePegs);
+        guess = possibleCodes.get((int) (Math.random()*possibleCodes.size()));
+        return guess;
     }
 
-    private String removeWhite() {
-        String newGuess = guess;
-        if(blackPegs <= blackPegsPrev){
-            newGuess = prevGuess;
-            replaceIndex++;
-        } else if(blackPegs > blackPegsPrev){
-            prevGuess = guess;
-            whiteIndex++;
-            replaceIndex = 0;
-        }
-        if (replaceIndex == whiteIndex){
-            replaceIndex++;
-        }
-        temp = newGuess.charAt(whiteIndex);
-        char temp2 = newGuess.charAt(replaceIndex);
-        newGuess = newGuess.replace(newGuess.charAt(whiteIndex), '0');
-        newGuess = newGuess.replace(newGuess.charAt(replaceIndex), temp);
-        newGuess = newGuess.replace('0',temp2);
-        guess = newGuess;
-        return newGuess;
-    }
-
-    private String removeDots() {
-        String newGuess = guess;
-        if(blackPegs + whitePegs < safePegsum || (blackPegs + whitePegs == safePegsum &&remainder1Tried&&remainder2Tried)){
-            newGuess = prevGuess;
-            dotIndex++;
-            remainder1Tried = false;
-            remainder2Tried = false;
-        }else {
-            prevGuess = guess;
-            safePegsum = blackPegs + whitePegs;
-            if (remainder2 == guess.charAt(dotIndex)){
-                remainder2 = temp;
-            } else {
-                remainder1 = temp;
+    private void removeInconsistentCodes(int blackPegs, int whitePegs) {
+        ArrayList<String> newPossibles = new ArrayList<String>();
+        for (String possibleCode : possibleCodes) {
+            String pegs = generatePegs(guess, possibleCode);
+            if (countBlackPegs(pegs) == blackPegs && countWhitePegs(pegs) == whitePegs){
+                newPossibles.add(possibleCode);
             }
         }
-        if (dotIndex == 4){
-            dotIndex--;
-        }
-        temp = newGuess.charAt(dotIndex);
-        if (!remainder1Tried) {
-            newGuess = newGuess.replace(newGuess.charAt(dotIndex), remainder1);
-            remainder1Tried = true;
-        } else {
-            newGuess = newGuess.replace(newGuess.charAt(dotIndex), remainder2);
-            remainder2Tried = true;
-        }
-        guess = newGuess;
-        return newGuess;
+        possibleCodes = newPossibles;
     }
 
-    public void countPegs(String pegs) {
-        whitePegsPrev = whitePegs;
-        blackPegsPrev = blackPegs;
-        whitePegs = 0;
-        blackPegs = 0;
+
+    public int countBlackPegs(String pegs) {
+        int bpegs = 0;
         for (int i = 0; i < pegs.length(); i++){
-            if(pegs.charAt(i) == 'b'){
-                blackPegs++;
-            } else if (pegs.charAt(i) == 'w'){
-                whitePegs++;
+            if(pegs.charAt(i) == 'b') {
+                bpegs++;
             }
         }
+        return bpegs;
     }
+
+    public int countWhitePegs(String pegs) {
+        int wpegs = 0;
+        for (int i = 0; i < pegs.length(); i++){
+            if (pegs.charAt(i) == 'w'){
+                wpegs++;
+            }
+        }
+        return wpegs;
+    }
+
+
+    public void generatePossibleCodes(){
+        permutation("", "1234");
+        permutation("", "5234");
+        permutation("", "6234");
+        permutation("", "1534");
+        permutation("", "1634");
+        permutation("", "1254");
+        permutation("", "1264");
+        permutation("", "1235");
+        permutation("", "1236");
+        permutation("", "1256");
+        permutation("", "1536");
+        permutation("", "5236");
+        permutation("", "5264");
+        permutation("", "5634");
+        permutation("", "1564");
+    }
+
+    private void permutation(String prefix, String str) {
+        int n = str.length();
+        if (n == 0) {
+            if (!possibleCodes.contains(prefix)) {
+                possibleCodes.add(prefix);
+            }
+        }
+        else {
+            for (int i = 0; i < n; i++)
+                permutation(prefix + str.charAt(i), str.substring(0, i) + str.substring(i+1, n));
+        }
+    }
+
+    public String generatePegs(String newGuess, String compareGuess) {
+        String pegString = "";
+        ArrayList<Integer> guess = new ArrayList<Integer>();
+        for (int n = 0; n < newGuess.length(); n++){
+            guess.add(Character.getNumericValue(newGuess.charAt(n)));
+        }
+        ArrayList<Integer> compGuess = new ArrayList<Integer>();
+        for (int l = 0; l < compareGuess.length(); l++){
+            compGuess.add(Character.getNumericValue(compareGuess.charAt(l)));
+        }
+
+        for (int i = 0; i < guess.size(); i++) {
+            if(guess.get(i).equals(compGuess.get(i))){
+                pegString += "b";
+            } else if (compGuess.contains(guess.get(i))){
+                pegString += "w";
+            } else {
+                pegString += ".";
+            }
+        }
+        return pegString;
+    }
+
 }

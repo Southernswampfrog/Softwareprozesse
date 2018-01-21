@@ -1,5 +1,8 @@
 import Codemaker.Computer;
 import org.junit.Test;
+
+import java.util.ArrayList;
+
 import static org.junit.Assert.*;
 
 public class CodemakerComputerTest {
@@ -7,7 +10,7 @@ public class CodemakerComputerTest {
     @Test
     public void testCountPegs4White(){
         Computer computer = new Computer();
-        computer.countPegs("wwww");
+        //computer.countPegs("wwww");
         assertEquals(computer.getWhitePegs(), 4);
         assertEquals(computer.getBlackPegs(), 0);
     }
@@ -35,5 +38,20 @@ public class CodemakerComputerTest {
         Computer computer = new Computer();
         computer.setGuess("1234");
         computer.setPrevGuess("1235");
+    }
+
+    @Test
+    public void testPermutation(){
+        Computer computer = new Computer();
+        computer.generatePossibleCodes();
+        ArrayList possibleCodes = computer.getPossibleCodes();
+        assertEquals(possibleCodes.size(), 360);
+    }
+
+    @Test
+    public void testGeneratePegs(){
+        Computer computer = new Computer();
+        String pegs = computer.generatePegs("5146","3145");
+        assertEquals(pegs, "wwww");
     }
 }
